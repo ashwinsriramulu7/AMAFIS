@@ -15,20 +15,41 @@ public class PartRequest {
     public int getRequestId() {
         return requestId;
     }
+    public void setRequestId(int requestId) {
+        this.requestId = requestId;
+    }
     public int getPartId() {
         return partId;
+    }
+    public void setPartId(int partId) {
+        this.partId = partId;
     }
     public int getQuantityRequested() {
         return quantityRequested;
     }
+    public void setQuantityRequested(int quantityRequested) {
+        this.quantityRequested = quantityRequested;
+    }
     public String getStatus() {
         return status;
+    }
+    public void setStatus(String status) {
+        this.status = status;
     }
     public String getRequestedBy() {
         return requestedBy;
     }
+    public void setRequestedBy(String requestedBy) {
+        this.requestedBy = requestedBy;
+    }
     @Override
     public String toString() {
-        return "Request ID: " + requestId + ", Part ID: " + partId + ", Quantity Requested: " + quantityRequested + ", Status: " + status + ", Requested By: " + requestedBy;
+        return "PartRequest{" +
+                "requestId=" + requestId +
+                ", partId=" + partId +
+                ", quantityRequested=" + quantityRequested +
+                ", status='" + status + '\'' +
+                ", requestedBy='" + requestedBy + '\'' +
+                '}';
     }
 }
